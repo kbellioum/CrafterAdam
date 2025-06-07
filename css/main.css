@@ -1,17 +1,32 @@
+/*
+  Custom CSS variables used throughout this stylesheet.
+  --bg-color: navigation background color
+  --text-color: main text color
+  --light-color: light text elements such as hero headers
+  --border-color: borders and dividers
+*/
+
+:root {
+  --bg-color: #f8f8f8;
+  --text-color: #333;
+  --light-color: #fff;
+  --border-color: #eee;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-color);
 }
 
 nav {
-  background-color: #f8f8f8;
+  background-color: var(--bg-color);
   padding: 1rem;
 }
 
 .hero {
   background: url('../images/header.jpg') center/cover no-repeat;
-  color: #fff;
+  color: var(--light-color);
   text-align: center;
   padding: 6rem 1rem;
 }
@@ -25,7 +40,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .news img {
