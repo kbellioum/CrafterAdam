@@ -1,3 +1,4 @@
 [build]
   publish = "."
   image = "focal"
+  command = "envsubst < map.html > _map.html && mv _map.html map.html"
